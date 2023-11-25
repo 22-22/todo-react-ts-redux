@@ -1,0 +1,53 @@
+.todo-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+    padding: 7px 10px 7px 35px;
+    border-radius: 5px;
+    background-color: #86e5e5;
+    cursor: pointer;
+}
+
+.todo-item:nth-child(odd) {
+    background-color: #0ac9c9;
+}
+
+.todo-item:hover {
+    background-color: #029f9f;
+}
+
+.todo-item--checked {
+    background-color: #207272 !important;
+}
+
+.todo-text {
+    font-size: 16px;
+}
+
+.todo-text--checked {
+    text-decoration: line-through;
+}
+
+.todo-item--checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 8px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.todo-delete-btn {
+    padding: 3px 7px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5ada6e;
+    border: 1px solid green;
+}
